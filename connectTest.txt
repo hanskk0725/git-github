@@ -9,3 +9,12 @@
     3. 로컬 저장소에 저장
         - git commit -m '변경된 메시지 작성하는곳'
 
+Github 연결
+    1. Github -> repository 생성(원격 저장소)
+    2. 로컬과 원격 연결
+        - git remote add origin <원격저장소_URL.git>
+            - 원격저장소 이름 변수 설정 -> origin
+    3. git push -u origin main
+        - 원격저장소에 main 브랜치 업로드
+            - 다른 브랜치 업로드 하려면?
+    
