@@ -2,3 +2,15 @@ git pull --rebase origin main?
 git push -u origin main?
 
 .gitignore 파일 설정
+
+- 원격 저장소 이름 변경?
+    1. 현재 원격 저장소 확인
+        - git remote -v
+    2. 원격 저장소 URL 변경
+        - 원격에서 이름 변경
+        - git remote set-url origin 새로운저장소
+    (2-1) 기존 URL을 유지하면서 추가 URL을 설정하기
+        - git remote set-url --add origin 추가할저장소
+        - 다중의 원격저장소를 사용하고 있을 때, 특정 URL 삭제
+            - git remote set-url --delete 삭제할저장소
+    
