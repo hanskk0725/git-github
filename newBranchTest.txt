@@ -1,0 +1,6 @@
+test 브랜치 생성
+    - git branch test
+브랜치 이동
+    - git switch test
+브랜치 확인
+    - git status
