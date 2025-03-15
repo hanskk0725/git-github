@@ -4,3 +4,8 @@ test 브랜치 생성
     - git switch test
 브랜치 확인
     - git status
+브랜치, 원격 연결
+    - git push -u origin test
+원격 브랜치 확인(모든 브랜치 확인)
+    - git branch -r  (git branch -a)
+
