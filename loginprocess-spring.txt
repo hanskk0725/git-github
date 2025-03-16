@@ -1,0 +1,19 @@
+[java 스프링에서 로그인/로그아웃 과정]
+1. 사용자가 웹브라우저에서 로그인 페이지 요청
+    - HTTP 요청 : Get /login
+2. SpringMVC의 '@Controller'가 해당 요청을 처리
+    - @GetMapping("/login")
+3. 요청을 받은 컨트롤러는 로그인 폼이 포함된 HTML 페이지를 반환
+
+4. 사용자가 아이디 비밀번호 입력후 form=action="/login" method="post" 방식으로 전송
+    - HTTP 요청 : Post /login
+5. SpringMVC의 '@Controller'에서 해당 요청을 처리
+    - 로그인 검증이 완료되면 세션 생성 제공
+    - 세션 Id를 쿠키에 저장
+6. 사용자는 서버에서 전달된 쿠키를 가지고 로그인이 완료된 화면에 접근 가능
+
+7. 사용자가 로그아웃 버튼을 클릭
+    - HTTP 요청 : Post /logout
+
+8. 서버의 컨트롤러에서 해당 요청을 처리
+    - session.invalidate();
